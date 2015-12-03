@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <array name="bar_colors">
+        <item>#a1a1a1</item>
+        <item>#628ee7</item>
+    </array>
+
+</resources>

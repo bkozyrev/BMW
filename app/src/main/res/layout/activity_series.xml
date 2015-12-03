@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/series_list"
+            android:background="@color/gray_background"
+            android:paddingTop="@dimen/abc_action_bar_default_height_material"
+            android:clipToPadding="false"/>
+
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminate="true"
+            android:id="@+id/bar"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            app:cpb_colors="@array/bar_colors"
+            app:cpb_rotation_speed="1.0"
+            app:cpb_sweep_speed="1.0"
+            app:cpb_stroke_width="4dp"
+            app:cpb_min_sweep_angle="10"
+            app:cpb_max_sweep_angle="300" />
+
+    <include layout="@layout/view_toolbar"
+        android:id="@+id/toolbar"/>
+
+    <include layout="@layout/view_shadow"
+            android:id="@+id/shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/toolbar" />
+
+</RelativeLayout>

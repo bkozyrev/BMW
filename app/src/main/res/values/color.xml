@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="blue">#628ee7</color>
+    <color name="white">#ffffff</color>
+    <color name="menu_item">#535355</color>
+    <color name="news_black">#353535</color>
+	<color name="grey">#898d90</color>
+
+
+    <color name="toolbar_text_gray">#606366</color>
+    <color name="toolbar_text_white">#FFFFFF</color>
+    <color name="main_menu_bck_color">#AFFFFFFF</color>
+    <color name="gray_background">#EEEEEE</color>
+    <color name="black">#000000</color>
+</resources>

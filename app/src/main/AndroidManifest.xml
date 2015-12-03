@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.utro.bmw" >
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".BMW"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.NewsActivity">
+        </activity>
+        <activity
+            android:name=".activities.AccessoriesCategoriesActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activities.VehiclesActivity">
+        </activity>
+
+        <activity
+            android:name=".activities.MerchandiseActivity">
+        </activity>
+
+        <activity
+            android:name=".activities.SingleVehicleActivity">
+        </activity>
+
+        <activity
+            android:name=".activities.CurrentMerchandiseActivity">
+        </activity>
+
+        <activity
+            android:name=".activities.CurrentNewsActivity">
+        </activity>
+
+        <activity
+            android:name=".activities.SeriesActivity"
+            android:label="@string/title_activity_vehicles">
+        </activity>
+
+        <activity
+            android:name=".activities.ServicesOrderActivity">
+        </activity>
+
+        <activity
+            android:name=".activities.ServicesListActivity">
+        </activity>
+
+        <activity
+            android:name=".activities.TestDriveActivity">
+        </activity>
+
+        <activity
+            android:name=".activities.SingleVehicleActivityFromTestDrive">
+        </activity>
+
+    </application>
+
+</manifest>

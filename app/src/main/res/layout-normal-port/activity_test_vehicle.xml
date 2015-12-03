@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.utro.bmw.utils.CustomScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/test_drive_scroll">
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/screen_ll"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_toolbar"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/vehicle_img_ll"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+                <requestFocus/>
+
+                <include layout="@layout/view_shadow"
+                    android:id="@+id/shadow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vehicle_img"
+                    android:scaleType="fitCenter"/>
+
+                </RelativeLayout>
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max = "36"
+                android:layout_marginBottom="-7dp"
+                android:id="@+id/progressBar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="vertical"
+                    android:alpha="0.7"
+                    android:background="@color/grey">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="bottom|center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textSize="20sp"
+                            android:id="@+id/vehicle_title"
+                            android:textColor="@color/white"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:gravity="top|center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:id="@+id/vehicle_price"
+                            android:layout_centerHorizontal="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginBottom="5dp"
+                            android:id="@+id/details_list">
+
+                            </ListView>
+
+                    </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.utro.bmw.utils.CustomScrollView>
+
+</LinearLayout>

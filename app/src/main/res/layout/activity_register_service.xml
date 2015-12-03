@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_edittext_bck">
+
+    <include layout="@layout/view_toolbar"
+        android:id="@+id/toolbar"/>
+
+    <include layout="@layout/view_shadow"
+        android:id="@+id/shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/toolbar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="Фамилия"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:hint="Фамилия"
+                android:background="@drawable/register_edittext_bck"
+                android:textSize="15sp"
+                android:layout_weight="0.7"
+                android:id="@+id/edit_text_surname"
+                android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="Имя"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:hint="Имя"
+                android:background="@drawable/register_edittext_bck"
+                android:textSize="15sp"
+                android:layout_weight="0.7"
+                android:id="@+id/edit_text_name"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="Отчество"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:hint="Отчество"
+                android:background="@drawable/register_edittext_bck"
+                android:textSize="15sp"
+                android:layout_weight="0.7"
+                android:id="@+id/edit_text_lastname"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="Email"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:hint="name@email.com"
+                android:background="@drawable/register_edittext_bck"
+                android:textSize="15sp"
+                android:layout_weight="0.7"
+                android:id="@+id/edit_text_email"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="Телефон"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="phone"
+                android:hint="(495) 980 77 55"
+                android:background="@drawable/register_edittext_bck"
+                android:textSize="15sp"
+                android:layout_weight="0.7"
+                android:id="@+id/edit_text_phone"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="Дата"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:alpha="0.7"
+                android:gravity="left|center_vertical"
+                android:text="Выбрать дату визита"
+                android:textColor="@color/blue"
+                android:layout_weight="0.7"
+                android:id="@+id/date_pick"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Записаться на сервис"
+            android:layout_marginTop="20dp"
+            android:id="@+id/register_btn"
+            android:background="@drawable/roun_corn_backtransp_strokeblue"
+            android:textColor="@color/blue"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp" />
+    </LinearLayout>
+
+</RelativeLayout>

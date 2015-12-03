@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.nirhart.parallaxscroll.views.ParallaxScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="256dp" >
+
+                <include layout="@layout/view_toolbar"
+                    android:id="@+id/toolbar"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerInside"
+                    android:id="@+id/cur_merch_img"
+                    android:layout_below="@+id/toolbar" />
+
+                <include
+                    layout="@layout/view_shadow"
+                    android:id="@+id/include"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/toolbar" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cur_merch_title"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="28sp"/>
+
+                <com.utro.bmw.TextViewEx
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cur_merch_descr"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        </com.nirhart.parallaxscroll.views.ParallaxScrollView>
+
+</LinearLayout>

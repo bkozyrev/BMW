@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">BMW</string>
+    <string name="my_bmw">My BMW</string>
+    <string name="main_screen">BMW</string>
+    <string name="accessories">Accessories</string>
+    <string name="vehicles">Vehicles</string>
+    <string name="price">Цена</string>
+    <string name="buy">Купить</string>
+    <string name="more">Подробнее</string>
+
+    <string-array name="main_menu_items">
+        <item>Последние новости BMW</item>
+        <item>Пройти тест-драйв</item>
+        <item>Автомобили в наличии</item>
+        <item>Купить аксессуары BMW</item>
+        <item>Сведения о компании</item>
+        <item>Запись на сервис</item>
+    </string-array>
+
+    <string-array name="accessories_menu_items">
+        <item>Аксессуары</item>
+        <item>Одежда</item>
+        <item>Модели и игрушки</item>
+        <item>Средства передвижения</item>
+    </string-array>
+
+    <string-array name="series">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>X</item>
+        <item>Z</item>
+        <item>M</item>
+        <item>i8</item>
+    </string-array>
+
+    <string name="accessories_sample1">Фирменная ручка</string>
+    <string name="accessories_sample2">Товарищи! дальнейшее развитие  различных форм деятельности  позоляет выполнять важные задания по разработке модели развития</string>
+    <string name="accessories_sample3">200 000$</string>
+	<string name="vehicle_sample1">BMW1 116i 5-дверей.Sport Line.</string>
+
+	<string name="vehicle_sample2">BMW1 Series Coupe</string>
+    <string name="title_activity_news">My BMW</string>
+    <string name="title_activity_services_list">Запись на сервис</string>
+    <string name="title_activity_accessories">Аксессуары</string>
+    <string name="title_activity_vehicles">Автомобили в наличии</string>
+    <string name="title_activity_test_drive">Demo автомобили</string>
+    <string name="title_activity_current_news">My BMW</string>
+    <string name="title_activity_series">Список серий</string>
+    <string name="title_activity_register_service">Запись на сервис</string>
+    <string name="title_activity_test_drive_vehicle">BMW</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>

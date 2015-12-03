@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="20"
+    android:id="@+id/merch_ll"
+    android:background="@color/white"
+    android:padding="5dp">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerInside"
+            android:id="@+id/merch_item_img"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/news_black"
+            android:id="@+id/merch_item_title"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"/>
+        <!--android:text="@string/accessories_sample1"-->
+
+        <!--android:text="@string/accessories_sample2"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/merch_item_title"
+            android:id="@+id/merch_item_descr"
+            android:textColor="@color/news_black"
+            android:textSize="12sp"
+            android:gravity="start"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:minHeight="80dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/price"
+            android:textColor="@color/news_black"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/merch_item_descr"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/text_price"/>
+
+        <!--android:text="@string/accessories_sample3"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/merch_item_price"
+            android:textColor="@color/news_black"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/text_price"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@+id/text_price"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:text="@string/more"
+            android:textColor="@color/blue"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="false"
+            android:background="@drawable/button_buy"
+            android:layout_below="@+id/text_price"
+            android:id="@+id/btn_more"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:text="Купить"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="false"
+            android:background="@drawable/button_buy"
+            android:id="@+id/btn_buy"
+            android:layout_below="@+id/btn_more" />
+
+    </RelativeLayout>
+
+</LinearLayout>

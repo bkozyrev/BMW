@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.utro.bmw.utils.CustomScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/test_drive_scroll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/screen_ll"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_toolbar"
+                android:id="@+id/toolbar"/>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vehicle_img_ll"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+                <requestFocus/>
+
+                <include layout="@layout/view_shadow"
+                    android:id="@+id/shadow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vehicle_img"
+                    android:scaleType="fitCenter"/>
+
+            </RelativeLayout>
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max = "36"
+                android:layout_marginBottom="-7dp"
+                android:id="@+id/progressBar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Пройти тест-драйв"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:id="@+id/btn_test_drive"
+                        android:background="@drawable/btn_test_drive_background"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/details_list">
+
+                    </ListView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.utro.bmw.utils.CustomScrollView>
+
+</LinearLayout>

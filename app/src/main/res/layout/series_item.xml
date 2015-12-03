@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_series"
+    android:layout_gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="8dp"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    android:translationZ="10dp"
+    android:elevation="5dp">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="200dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/series_img_rl">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/series_img"/>
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:layout_below="@+id/series_img_rl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/service_title"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chevron"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

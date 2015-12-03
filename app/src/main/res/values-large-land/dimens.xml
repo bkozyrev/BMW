@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="img_main_maxwidth">600dp</dimen>
+    <dimen name="main_menu_item_height">200dp</dimen>
+    <dimen name="main_menu_item_width">150dp</dimen>
+</resources>
